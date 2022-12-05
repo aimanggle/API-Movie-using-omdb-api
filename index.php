@@ -11,11 +11,9 @@ else
     $api = 'https://www.omdbapi.com/?apikey=55f89a6&s=smurf';
 }
 
-// $data = file_get_contents('https://www.omdbapi.com/?apikey=55f89a6&s=' . $search);
 $data = file_get_contents($api);
 
 $movie = json_decode($data, true);
-// var_dump($movie);
 
 ?>
 <!doctype html>
